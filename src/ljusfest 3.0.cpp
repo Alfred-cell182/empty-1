@@ -23,16 +23,19 @@ void loop() {
     previous_change_time = current_time;
     if (Ligth == false) {
       digitalWrite(LED_PINS[x], HIGH);
+      Serial.println("loop 1");
       Ligth = true;
+      x++;
     } else if (Ligth == true) {
       digitalWrite(LED_PINS[x], LOW);
+      Serial.println("loop 2");
       Ligth = false;
       x++;
     }
-
     if (x == LED_COUNT) {
       x = 0;
     }
+    
   }
   delay(10);
 }
