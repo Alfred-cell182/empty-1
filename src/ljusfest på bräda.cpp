@@ -6,7 +6,7 @@ bool Ligth = true;
 bool led_is_on = false;
 unsigned long previous_change_time = 0;
 
-const int LED_PINS[] = { 4, 5};  // Exempel – använd dina GPIO.
+const int LED_PINS[] = {4, 5};  // Exempel – använd dina GPIO.
 const int LED_COUNT = 2;
 int x = 0;
 
